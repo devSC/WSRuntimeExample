@@ -22,15 +22,14 @@
         
         
 //        BOOL res1 = [(id)[NSObject class] isKindOfClass:[NSObject class]];
-        BOOL res1 = ((BOOL (*)(id, SEL, Class))(void *)objc_msgSend)((id)((Class (*)(id, SEL))(void *)objc_msgSend)((id)objc_getClass("NSObject"), sel_registerName("class")), sel_registerName("isKindOfClass:"), ((Class (*)(id, SEL))(void *)objc_msgSend)((id)objc_getClass("NSObject"), sel_registerName("class")));
-
-        
-        BOOL res2 = [(id)[NSObject class] isMemberOfClass:[NSObject class]];
-        
-        BOOL res3 = [(id)[Son class] isKindOfClass:[Son class]];
-        BOOL res4 = [(id)[Son class] isMemberOfClass:[Son class]];
-        
-        NSLog(@"%d %d %d %d", res1, res2, res3, res4);
+//
+//        
+//        BOOL res2 = [(id)[NSObject class] isMemberOfClass:[NSObject class]];
+//        
+//        BOOL res3 = [(id)[self class] isKindOfClass:[Son class]];
+//        BOOL res4 = [(id)[Son class] isMemberOfClass:[Son class]];
+//        
+//        NSLog(@"%d %d %d %d", res1, res2, res3, res4);
 
         
     }

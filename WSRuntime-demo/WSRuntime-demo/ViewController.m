@@ -21,11 +21,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [UIView printIvalist];
+    
+    /*  Print List
+         [UIView printIvalist];
     
     [UIView printPropertyList];
     
     [UIView printMethodList];
+     */
     
 //    NSString *test = @"test";
 //    id haha = test;
@@ -34,6 +37,17 @@
     
     Son *son = [[Son alloc] init];
     
+    
+    BOOL res1 = [(id)[NSObject class] isKindOfClass:[NSObject class]];
+    
+    
+    BOOL res2 = [(id)[NSObject class] isMemberOfClass:[NSObject class]];
+    
+    BOOL res3 = [(id)son isKindOfClass:[Son class]];
+    BOOL res4 = [(id)[Son class] isMemberOfClass:[Son class]];
+    
+    NSLog(@"%d %d %d %d", res1, res2, res3, res4);
+
 
 }
 
