@@ -36,7 +36,11 @@
 //    id haha = test;
 //    [haha count];
 //    [haha objectAtIndex:0];
-
+//    NSLog(@"1");
+//    dispatch_sync(dispatch_get_main_queue(), ^{
+//        NSLog(@"2");
+//    });
+//    NSLog(@"3");
     
     //
 //    Son *son = [[Son alloc] init];
