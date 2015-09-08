@@ -15,6 +15,9 @@
 
 #import "NSObject+Sark.h"
 @interface ViewController ()
+{
+    NSString *_foo;
+}
 
 @end
 
@@ -57,10 +60,13 @@
 //    NSLog(@"%d %d %d %d", res1, res2, res3, res4);
 
     
-    [NSObject foo];
+//    [NSObject foo];
 //    [[NSObject new] foo];
     
+//    [self setValue:@"1" forKey:@"foo"];
 
+    [self setValue:@"1" forKey:@"_foo"];
+    NSLog(@" %@ key _foo: %@ foo: %@  _foo: %@", [self valueForKey:@"foo"], [self valueForKey:@"_foo"], _foo, _foo);
 }
 
 - (void)didReceiveMemoryWarning {
