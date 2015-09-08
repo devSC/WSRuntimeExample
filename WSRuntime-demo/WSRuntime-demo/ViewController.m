@@ -12,6 +12,8 @@
 #import "NSString+Swizzle.h"
 
 #import "Son.h"
+
+#import "NSObject+Sark.h"
 @interface ViewController ()
 
 @end
@@ -34,20 +36,26 @@
 //    id haha = test;
 //    [haha count];
 //    [haha objectAtIndex:0];
-    
-    Son *son = [[Son alloc] init];
-    
-    
-    BOOL res1 = [(id)[NSObject class] isKindOfClass:[NSObject class]];
-    
-    
-    BOOL res2 = [(id)[NSObject class] isMemberOfClass:[NSObject class]];
-    
-    BOOL res3 = [(id)son isKindOfClass:[Son class]];
-    BOOL res4 = [(id)[Son class] isMemberOfClass:[Son class]];
-    
-    NSLog(@"%d %d %d %d", res1, res2, res3, res4);
 
+    
+    //
+//    Son *son = [[Son alloc] init];
+//    
+//    
+//    BOOL res1 = [(id)[NSObject class] isKindOfClass:[NSObject class]];
+//    
+//    
+//    BOOL res2 = [(id)[NSObject class] isMemberOfClass:[NSObject class]];
+//    
+//    BOOL res3 = [(id)son isKindOfClass:[Son class]];
+//    BOOL res4 = [(id)[Son class] isMemberOfClass:[Son class]];
+//    
+//    NSLog(@"%d %d %d %d", res1, res2, res3, res4);
+
+    
+    [NSObject foo];
+//    [[NSObject new] foo];
+    
 
 }
 
