@@ -9,5 +9,12 @@
 #import "Father.h"
 
 @interface Son : Father
+{
+//    NSString *_mysySting;
+}
+
+@property (nonatomic, copy) NSMutableArray *array;
+
+@property (nonatomic, copy) NSString *syString;
 
 @end
