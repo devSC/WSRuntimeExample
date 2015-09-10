@@ -20,6 +20,7 @@
 		52F8A7E31B9D62190017EA38 /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F8A7E21B9D62190017EA38 /* NSObject+Swizzle.m */; };
 		52F8A7E61B9D795B0017EA38 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F8A7E51B9D795B0017EA38 /* Father.m */; };
 		52F8A7E91B9D796A0017EA38 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F8A7E81B9D796A0017EA38 /* Son.m */; };
+		FED763341B9DDA4E00DA0C5F /* NSObject+Sark.m in Sources */ = {isa = PBXBuildFile; fileRef = FED763331B9DDA4E00DA0C5F /* NSObject+Sark.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		52F8A7E51B9D795B0017EA38 /* Father.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
 		52F8A7E71B9D796A0017EA38 /* Son.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
 		52F8A7E81B9D796A0017EA38 /* Son.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		FED763321B9DDA4E00DA0C5F /* NSObject+Sark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Sark.h"; sourceTree = "<group>"; };
+		FED763331B9DDA4E00DA0C5F /* NSObject+Sark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Sark.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				52F8A7DF1B9D61940017EA38 /* NSString+Swizzle.m */,
 				52F8A7E11B9D62190017EA38 /* NSObject+Swizzle.h */,
 				52F8A7E21B9D62190017EA38 /* NSObject+Swizzle.m */,
+				FED763321B9DDA4E00DA0C5F /* NSObject+Sark.h */,
+				FED763331B9DDA4E00DA0C5F /* NSObject+Sark.m */,
 				52F8A7BF1B9D5A770017EA38 /* Main.storyboard */,
 				52F8A7C21B9D5A770017EA38 /* Images.xcassets */,
 				52F8A7C41B9D5A770017EA38 /* LaunchScreen.xib */,
@@ -256,6 +261,7 @@
 				52F8A7BB1B9D5A770017EA38 /* AppDelegate.m in Sources */,
 				52F8A7E01B9D61940017EA38 /* NSString+Swizzle.m in Sources */,
 				52F8A7B81B9D5A770017EA38 /* main.m in Sources */,
+				FED763341B9DDA4E00DA0C5F /* NSObject+Sark.m in Sources */,
 				52F8A7E61B9D795B0017EA38 /* Father.m in Sources */,
 				520D45F11B9EA6380049D7D6 /* UserModel.m in Sources */,
 			);

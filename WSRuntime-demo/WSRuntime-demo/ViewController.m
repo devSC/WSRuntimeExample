@@ -12,7 +12,12 @@
 #import "NSString+Swizzle.h"
 
 #import "Son.h"
+
+#import "NSObject+Sark.h"
 @interface ViewController ()
+{
+    NSString *_foo;
+}
 
 @end
 
@@ -40,6 +45,7 @@
 //    });
 //    NSLog(@"3");
 
+
     
     NSString *str = @"哈哈";
     Son *son = [[Son alloc] init];
@@ -47,14 +53,19 @@
     NSLog(@"str: %p, str: %@",&str, str);
     
     [son printsyString];
-//    BOOL res1 = [(id)[NSObject class] isKindOfClass:[NSObject class]];
-//    BOOL res2 = [(id)[NSObject class] isMemberOfClass:[NSObject class]];
 //    BOOL res3 = [(id)son isKindOfClass:[Son class]];
 //    BOOL res4 = [(id)[Son class] isMemberOfClass:[Son class]];
 //    
 //    NSLog(@"%d %d %d %d", res1, res2, res3, res4);
 
 
+//    [NSObject foo];
+//    [[NSObject new] foo];
+    
+//    [self setValue:@"1" forKey:@"foo"];
+
+    [self setValue:@"1" forKey:@"_foo"];
+    NSLog(@" %@ key _foo: %@ foo: %@  _foo: %@", [self valueForKey:@"foo"], [self valueForKey:@"_foo"], _foo, _foo);
 }
 
 - (void)didReceiveMemoryWarning {
