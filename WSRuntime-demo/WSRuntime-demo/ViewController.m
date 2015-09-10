@@ -41,18 +41,18 @@
 //    NSLog(@"3");
 
     
+    NSString *str = @"哈哈";
     Son *son = [[Son alloc] init];
+    son.syString = str;
+    NSLog(@"str: %p, str: %@",&str, str);
     
-    
-    BOOL res1 = [(id)[NSObject class] isKindOfClass:[NSObject class]];
-    
-    
-    BOOL res2 = [(id)[NSObject class] isMemberOfClass:[NSObject class]];
-    
-    BOOL res3 = [(id)son isKindOfClass:[Son class]];
-    BOOL res4 = [(id)[Son class] isMemberOfClass:[Son class]];
-    
-    NSLog(@"%d %d %d %d", res1, res2, res3, res4);
+    [son printsyString];
+//    BOOL res1 = [(id)[NSObject class] isKindOfClass:[NSObject class]];
+//    BOOL res2 = [(id)[NSObject class] isMemberOfClass:[NSObject class]];
+//    BOOL res3 = [(id)son isKindOfClass:[Son class]];
+//    BOOL res4 = [(id)[Son class] isMemberOfClass:[Son class]];
+//    
+//    NSLog(@"%d %d %d %d", res1, res2, res3, res4);
 
 
 }

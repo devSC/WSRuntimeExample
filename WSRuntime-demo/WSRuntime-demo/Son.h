@@ -10,11 +10,12 @@
 
 @interface Son : Father
 {
-//    NSString *_mysySting;
+    NSString *_syString;
 }
 
 @property (nonatomic, copy) NSMutableArray *array;
 
-@property (nonatomic, copy) NSString *syString;
+@property (nonatomic, strong) NSString *syString;
 
+- (void)printsyString;
 @end

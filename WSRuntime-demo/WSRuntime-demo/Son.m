@@ -16,7 +16,6 @@
 //@synthesize syString = _mysySting;
 //@synthesize syString = _syString;
 
-
 - (instancetype)init
 {
     self = [super init];
@@ -42,29 +41,36 @@
 
 //        NSLog(@"self.syString: %@ mysyString: %@", self.syString, _mysySting);
         
-        NSString *immutableObject = nil;;
-        NSString *mutableObject = nil;
+//        NSString *immutableObject = nil;;
+//        NSString *mutableObject = nil;
+//        
+//        [immutableObject copy]; //浅拷贝
+//        [immutableObject mutableCopy]; //深拷贝
+//        
+//        
+//        [mutableObject copy]; //深拷贝
+//        [mutableObject mutableCopy]; //深拷贝
+        NSMutableArray *array = [@[@"a", @"b"] mutableCopy];
         
-        [immutableObject copy]; //浅拷贝
-        [immutableObject mutableCopy]; //深拷贝
-        
-        
-        [mutableObject copy]; //深拷贝
-        [mutableObject mutableCopy]; //深拷贝
     }
     return self;
 }
 
 
-//- (NSString *)syString
-//{
-//    return _syString;
-//}
+- (NSString *)syString
+{
+    return _syString;
+}
 
 - (void)setSyString:(NSString *)syString
 {
     _syString = [syString copy];
 }
 
+- (void)printsyString
+{
+    NSLog(@"syString: %p, %@",&_syString, self.syString);
+    
+}
 
 @end
